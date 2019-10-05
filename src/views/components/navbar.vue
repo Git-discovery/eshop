@@ -1,27 +1,42 @@
 <template>
-    <el-container>
+  <el-row :span="24">
+    <el-col :span="18">
     <el-breadcrumb separator="|">
       <el-breadcrumb-item :to="{ path: '/home' }">首页</el-breadcrumb-item>
       <el-breadcrumb-item>
-        <a href="/">待定</a>
+        <a href="/">男装</a>
       </el-breadcrumb-item>
-      <el-breadcrumb-item><a href="/login">登录</a></el-breadcrumb-item>
-      <el-breadcrumb-item><a href="/regist">注册</a></el-breadcrumb-item>
+      <el-breadcrumb-item>
+        <a href="/">生鲜</a>
+      </el-breadcrumb-item>
+      <el-breadcrumb-item>
+        <a href="/">食品</a>
+      </el-breadcrumb-item>
+      <el-breadcrumb-item>
+        <a href="/">女装</a>
+      </el-breadcrumb-item>
+      <el-breadcrumb-item>
+        <a href="/">鞋靴</a>
+      </el-breadcrumb-item>
+      <el-breadcrumb-item>
+        <a href="/">箱包</a>
+      </el-breadcrumb-item>
     </el-breadcrumb>
-  </el-container>
+    </el-col>
+  </el-row>
 </template>
 
 <script>
-    export default {
-        name: 'navbar',
-        data() {
-            return {
-                
-            }
-        }
-    }
+export default {
+  name: "navbar",
+  data() {
+    return {};
+  }
+};
 </script>
 
 <style lang="" scoped>
-    
+.to-right {
+  float: right;
+}
 </style>
